@@ -1,0 +1,133 @@
+@import url("https://fonts.cdnfonts.com/css/futura-condensed-pt");
+
+* {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  text-decoration: none !important;
+  scroll-behavior: smooth;
+}
+
+.layout-container {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.layout-containerB {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.searchBox {
+  width: 100%;
+  height: 35px;
+  border: 1px solid black;
+  transition: 0.3s ease-in;
+}
+.search {
+  padding-left: 5px;
+  transition: 0.3s ease-in;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  width: 100%;
+}
+.search:focus {
+  outline: none;
+}
+
+.inputRegBox {
+  width: 100%;
+}
+.inputReg {
+  height: 45px;
+  padding-left: 10px;
+}
+
+.banner {
+  background-image: url("https://res.cloudinary.com/ceenobi/image/upload/v1690845730/Shopnbuy/download_kaahp7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.bannerB {
+  background-image: url("https://res.cloudinary.com/ceenobi/image/upload/v1673415563/Fashion/722473_Z6519_4440_006_100_0000_Light-Light-cashmere-twill-formal-jacket_ve4v0f.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.cardBox {
+  flex: 0 0 270px;
+  position: relative;
+  margin: 0 auto;
+}
+.cardBox img {
+  width: 100%;
+  height: 250px;
+}
+
+.collection:hover {
+  filter: grayscale(60%);
+}
+
+@media (min-width: 768px) {
+  .searchBox {
+    width: 400px;
+    height: 35px;
+  }
+  .search {
+    width: 380px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    height: 90vh;
+  }
+
+  .inputRegBox {
+    width: 300px;
+  }
+
+  collection:hover {
+    filter: grayscale(60%);
+  }
+
+  .cardBox {
+    flex: 0 0 300px;
+  }
+  .cardBox:hover {
+    border: 1px solid black;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+  .cardBox img {
+    width: 100%;
+    height: 400px;
+  }
+  .cardBox .focus-content {
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+  }
+  .cardBox:hover .focus-content,
+  .cardBox:focus-within .focus-content {
+    opacity: 1;
+  }
+
+  .hideTrash {
+    opacity: 0;
+  }
+
+  .qtyBox:hover .hideTrash {
+    opacity: 1;
+  }
+}
