@@ -14,7 +14,7 @@ export default function ShopOrders() {
     getAllOrders,
     currentUser?.access_token
   );
-  console.log("allorders", data);
+  
 
   useEffect(() => {
     document.title = "Shop orders";
@@ -92,11 +92,11 @@ export default function ShopOrders() {
                     <td>
                       <Button
                         variant={order.isDelivered ? "success" : "warning"}
-                        className="rounded-0 fw-bold"
+                        className="rounded-0 fw-bold w-100"
                         onClick={() => handleOrderUpdate(order._id)}
                         disabled={order.isDelivered === true}
                       >
-                        {order.isDelivered ? "COMPLETED" : "UPDATE"}
+                        {order.isDelivered && "COMPLETED"}
                         {order.isDelivered === false && order.status === 0 && 'UPDATE'}
                         {order.isDelivered === false && order.status === 1 && 'FULFILL'}
                       </Button>

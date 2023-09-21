@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {Root, Error} from "../components/Root";
+import {Root, Error} from "../components";
 import {
   Home,
   Collection,

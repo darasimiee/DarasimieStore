@@ -17,7 +17,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const { data } = useFetchData(getCategories);
   const { currentUser, logOut} = useStore();
-  console.log("nav", data);
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();

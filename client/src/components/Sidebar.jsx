@@ -10,7 +10,7 @@ import Loader from "../utils/Loader";
 export default function Sidebar() {
   const [show, setShow] = useState(false);
   const { data, error, loading } = useFetchData(getCategories);
-  console.log("Data", data);
+
   const { currentUser, logOut, links, adminLinks } = useStore();
 
   const handleClose = () => setShow(false);
