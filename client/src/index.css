@@ -75,6 +75,16 @@
   filter: grayscale(60%);
 }
 
+h1 {
+  font-size: clamp(1.4rem, 2vw, 1.8rem) !important;
+}
+p {
+  font-size: clamp(1.3rem, 1.5vw, 1.6rem) !important;
+}
+a {
+  font-size: clamp(1.3rem, 1vw, 1.6rem) !important;
+}
+
 @media (min-width: 768px) {
   .searchBox {
     width: 400px;
